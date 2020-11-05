@@ -1,0 +1,26 @@
+
+--SPA (Single Page Application)
+
+--Router
+  - listens to the events
+  -DOM (Document Object Model) & HTML Rendering is done by router
+  -Mapping the templates
+  -HTML rendering happens at the client side
+  -Dynamic Rendering
+  -Not appropriate for search engines
+
+--Typescript
+  -Strongly typed language
+  -Superset of javascript
+  -Traspiling - .ts -> .js
+
+--ng serve - Browser Sync (watch for the changes in your file)
+
+--Angular Bootstraping
+  -script inclusions were done as part of build process
+  -main.ts -> bootstrap -> AppModule --> @NgModule (bootStrap:[AppComponent])
+
+--Create a componnet using angular cli
+  -ng generate component other
+  -ng g c another --flat
+  -ng g c onemore --flat --it --is (it -> inline template, is -> inline style)
