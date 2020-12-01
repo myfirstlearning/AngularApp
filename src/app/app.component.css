@@ -1,3 +1,17 @@
 h1{
   color: orangered;
 }
+h2{
+  color: coral;
+}
+h3{
+  color: orange;
+}
+
+.green{
+  color: green;
+}
+
+.bold{
+  font-weight: bolder;
+}

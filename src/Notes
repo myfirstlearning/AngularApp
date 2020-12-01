@@ -42,8 +42,27 @@ Angular
   --Component Directive
     Directives with templates, Its like user control (own UI code)
 
+   ng-content -- in-built directive
+
 --component
   Mediator for view and Model where you write your binding code
+
+
+--Data Binding
+  It defines how view and component communicate with each other
+  -Expression/Interpolation binding
+  -Property binding
+  -Event binding
+  -Two-way binding
+
+  --Expression/Interpolation binding
+    Data flows from comp -> view
+    {{emp.fName}}
+  --Property binding
+    [], comp -> view, eg: textbox
+    Assigns a component property to html element attribute/dom props
+    [ngModel] -> change of property
+
 
 --Create a componnet using angular cli
   -ng generate component other

@@ -18,11 +18,45 @@
   </li>
 </ul>-->
 <h1>
-  {{title}}
+  {{title}} {{name}} {{version}}
 </h1>
+<h2>
+  {{emp.fName + ' ' + emp.lName}}
+</h2>
+<h3>{{sayHello()}}</h3>
 <!--<app-other></app-other>-->
 <!--<div id="app-other"></div>-->
 <app-other>
   <p>hello ng content</p>
   <p>hello ng content directive</p>
 </app-other>
+<img [src]="img" > <br> <!-- Property binding -->
+<img src="{{img}}"> <!-- String interpolation -->
+
+<h1 [textContent]="emp.fName" [title]="emp.lName"></h1>
+
+<p [hidden]="emp.active">
+  Name: {{'Hello ' + emp.fName}} <br>
+  Age: {{emp.age}}
+</p>
+
+<span [style.color]="emp.active ? 'blue' : 'white'"
+      [style.background-color]="emp.active ? 'blue' : 'red'">
+  {{emp.description}}
+</span>
+<br>
+<span [class.green]="emp.active"
+      [class.bold]="emp.active">Hello {{emp.fName}}</span>
+<br>
+
+<!-- ngStyle Example -->
+<span [ngStyle]= "{'color':emp.active ? 'blue' : 'white',
+                  'background-color':emp.active ? 'orange' : 'white'}">
+       Using Ng Style : {{emp.description}}
+</span>
+<br>
+
+<!-- ngClass Example -->
+<span [ngClass]="{'green':emp.active, 'bold':emp.active}">
+        Using Ng Class : Hello {{emp.fName}}
+</span>
