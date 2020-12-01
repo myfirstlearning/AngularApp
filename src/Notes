@@ -1,3 +1,12 @@
+Angular
+  -javascript binding framework
+
+--MVVM - angular implements
+  M-Model
+  V-View
+  VM-View Model
+
+  MVW - Model View Whatever
 
 --SPA (Single Page Application)
 
@@ -19,6 +28,22 @@
 --Angular Bootstraping
   -script inclusions were done as part of build process
   -main.ts -> bootstrap -> AppModule --> @NgModule (bootStrap:[AppComponent])
+
+--Directives
+  Change the behaviour of HTML DOM
+  -Structural Directive
+  -Attribute Directive
+  -Component Directive
+
+  --Structural Directive
+    change the DOM layout by adding and removing elements
+  --Attribute Directive
+    change the appearance and behaviour of HTML element (true visible/false invisible)
+  --Component Directive
+    Directives with templates, Its like user control (own UI code)
+
+--component
+  Mediator for view and Model where you write your binding code
 
 --Create a componnet using angular cli
   -ng generate component other
