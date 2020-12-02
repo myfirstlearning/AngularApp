@@ -33,6 +33,7 @@
 <img [src]="img" > <br> <!-- Property binding -->
 <img src="{{img}}"> <!-- String interpolation -->
 
+<!-- DOM Properties -->
 <h1 [textContent]="emp.fName" [title]="emp.lName"></h1>
 
 <p [hidden]="emp.active">
@@ -45,10 +46,13 @@
   {{emp.description}}
 </span>
 <br>
+
+<!-- CSS Properties -->
 <span [class.green]="emp.active"
       [class.bold]="emp.active">Hello {{emp.fName}}</span>
 <br>
 
+<!-- Using Directives -->
 <!-- ngStyle Example -->
 <span [ngStyle]= "{'color':emp.active ? 'blue' : 'white',
                   'background-color':emp.active ? 'orange' : 'white'}">
@@ -60,3 +64,14 @@
 <span [ngClass]="{'green':emp.active, 'bold':emp.active}">
         Using Ng Class : Hello {{emp.fName}}
 </span>
+
+<!-- Class selector -->
+<!-- <div class="app-selector"></div> -->
+
+<!-- Element selector -->
+<!--<app-selector></app-selector>-->
+
+<!-- Attribute selector -->
+<div app-selector></div>
+
+<app-eventbinding></app-eventbinding>

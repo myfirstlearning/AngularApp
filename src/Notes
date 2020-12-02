@@ -68,3 +68,5 @@ Angular
   -ng generate component other
   -ng g c another --flat
   -ng g c onemore --flat --it --is (it -> inline template, is -> inline style)
+
+
